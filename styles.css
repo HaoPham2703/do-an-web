@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.menutotal {
+    background-color: #3498db;
+    color: white;
+    padding: 10px auto;
+    width: 100%; /* Để bảng chiếm toàn bộ chiều rộng của màn hình */
+    display: flex;
+    
+    padding: 10px 20px;
+}
+
+.infomenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Để các phần tử bên trong menu được căn giữa và cách nhau đều */
+    margin: 0 auto;
+    padding: 0 20px; /* Thêm padding để tăng khoảng cách giữa nội dung và mépg */
+}
+
+.infomenu .logoweb img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+}
+
+#search_input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 500px;
+    height: 30px;
+}
+
+#search_button {
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search_button:hover {
+    background-color: #0c456b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .infomenu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search_box {
+        margin-top: 10px;
+    }
+
+    #search_input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dangnhap_box {
+        margin-left: 0;
+    }
+}
+.tablene {
+   
+}
+
+
+.infomenu .dangnhap_box {
+    border-width: 2px;
+    background-color: green;
+    position: relative;
+    margin: 0 10px; /* Thêm khoảng đệm 10px vào bên trong phần tử */
+    text-align: center;
+    height: 4vh;
+    margin-left: 100px;
+    max-width: 100%;
+    border: 1px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 10%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.dangnhap_box:hover {
+    background-color: #2980b9; /* Màu nền khi di chuột qua */
+    margin-bottom: 7px; /* Gạch chân chữ khi di chuột qua */
+}
+
+
+
+nav {
+    background-color: red;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    padding: 15px 20px;
+}
+
+nav li:hover {
+    background-color: #2980b9;
+}
+
+
+.dropdown_podvape,
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menu_podvape:hover .dropdown_podvape,
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+}
+
+
